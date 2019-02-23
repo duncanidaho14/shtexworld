@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Welcome from './components/Welcome'
+import Welcome from './components/Welcome';
+import TodoList from './Todo/TodoList';
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,7 +10,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-           <h1>Bienvenue</h1>  
+           <h1>Bienvenue</h1>
+           <p><Welcome name="shtex"/></p> 
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -19,8 +21,8 @@ class App extends Component {
           </a>
         </header>
       
-        <div className="Welcome">
-          <Welcome name="shtex"/>
+        <div className="">
+          <TodoList />
         </div>
       </div>
     );
