@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Redirect } from 'react-router-dom';
-
+import './Connexion.scss';
 class Connexion extends Component {
     state = {
         pseudo: '',
@@ -23,26 +23,33 @@ class Connexion extends Component {
         }
         return (
             <Fragment>
-               <div className='container connexionBox'>
-                    <form 
-                        className='form-row align-items-center connexion' 
-                        onSubmit={this.handleSubmit}
-                    >
-                        <input
-                            value={this.state.pseudo}
-                            onChange={this.handleChange}
-                            placeholder='Pseudo'
-                            type='text'
-                            className="form-control mb-2"
-                            required />
-                        <button 
-                            type='submit'
-                            className="btn btn-primary"
+                <div className='container connexionBoxParent'>
+                    <div className='row connexionBox'>
+                    <div className="col alert alert-success" role="alert">
+                        <form 
+                            className='form-row align-items-center connexion' 
+                            onSubmit={this.handleSubmit}
                         >
-                            Se connecter
-                        </button>
-                    </form>
-                </div> 
+                            <label>Ton pseudo :</label>
+                            <input
+                                value={this.state.pseudo}
+                                onChange={this.handleChange}
+                                placeholder='Pseudo'
+                                type='text'
+                                className="form-control xl-20 connexionInput"
+                                required />
+                            <button 
+                                type='submit'
+                                className="btn btn-primary col-md-12 connexionButton"
+                            >
+                                Se connecter
+                            </button>
+                        </form>
+                    </div>
+                        
+                    </div> 
+                </div>
+               
             </Fragment>
             
         )

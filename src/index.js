@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'react-bootstrap/dist/react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import './index.css';
+import './index.scss';
 import Connexion from './Connexion/Connexion';
 import NotFound from './Connexion/NotFound';
 import App from './App';

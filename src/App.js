@@ -5,7 +5,7 @@ import NavbarSide from './NavbarSide/NavbarSide';
 import Formulaire from './Tchat/Formulaire';
 import Message from './Tchat/Message';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 import base from './Firebase/Firebase';
 
@@ -38,7 +38,7 @@ class App extends Component {
         />
     ))
     return (
-      <div className="App">  
+      <div className="container App">  
         <nav>
           <NavbarSide />
         </nav>
@@ -47,7 +47,7 @@ class App extends Component {
           <h1><Welcome name="shtex"/></h1>   
         </header>
       
-        <div className="">
+        <div className="todolist">
           <TodoList />
         </div>
 

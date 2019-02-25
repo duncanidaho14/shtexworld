@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 500 500" version="1.1">
+  <path id="path3614" stroke-linejoin="round" d="m-86.864 638.24c0 134.85-111.93 244.17-250 244.17s-250-109.32-250-244.17 111.93-244.17 250-244.17 250 109.32 250 244.17z" transform="matrix(.47639 -.47639 .47639 .47639 85.01 -254.37)" stroke="#f00" stroke-linecap="round" stroke-width="50" fill="none"/>
+  <path id="path3614-1" stroke-linejoin="round" d="m-86.864 638.24c0 134.85-111.93 244.17-250 244.17s-250-109.32-250-244.17 111.93-244.17 250-244.17 250 109.32 250 244.17z" transform="matrix(.17739 -.17739 .17739 .17739 227.88 9.964)" stroke="#000" stroke-linecap="round" stroke-width="50" fill="none"/>
+  <path id="path3692" stroke-linejoin="round" d="m257.29 217.05c11.316-8.1474 39.482-10.892 51.82 3.8827" stroke="#000" stroke-linecap="round" stroke-width="10.934" fill="none"/>
+  <path id="rect3618" fill="#f00" transform="rotate(-45)" d="m0.15579 161.78h30.116v301.93h-30.116v-301.93z"/>
+  <path id="path3642" stroke-linejoin="round" d="m275.17 117.3c0.47189-6.9168-6.8498-9.6369-12.741-13.127 4.0864-7.2488 11.229-10.512 21.235-10.039 11.911 5.0921 10.622 13.897 8.5907 23.552" stroke="#000" stroke-linecap="round" stroke-width="8.7474" fill="none"/>
+  <path id="path3686" transform="matrix(1.0142 0 0 1.0142 567.43 -407.32)" d="m-298.12 570.04c0 4.7574-3.8567 8.6141-8.6141 8.6141s-8.6141-3.8567-8.6141-8.6141 3.8567-8.6141 8.6141-8.6141 8.6141 3.8567 8.6141 8.6141z"/>
+  <path id="path3688" transform="matrix(1.0142 0 0 1.0142 617.67 -407.32)" d="m-298.12 570.04c0 4.7574-3.8567 8.6141-8.6141 8.6141s-8.6141-3.8567-8.6141-8.6141 3.8567-8.6141 8.6141-8.6141 8.6141 3.8567 8.6141 8.6141z"/>
+  <path id="path3690" stroke-linejoin="round" d="m281.48 168.95c-1.6233 4.2845-8.8329 18.046-11.869 21.265 5.1068 0 11.302 0.22153 16.729 0.22153" stroke="#000" stroke-linecap="round" stroke-width="9.9032" fill="none"/>
+  <g id="text3694">
+    <path id="path3765" style="" d="m145.8 283.75c-0.00004-7.209-0.68232-12.281-2.0468-15.216-1.3388-2.9608-3.6045-4.4412-6.797-4.4412-3.1926 0.00005-5.4711 1.4805-6.8357 4.4412-1.3646 2.9351-2.0469 8.0072-2.0468 15.216-0.00002 7.2862 0.68226 12.423 2.0468 15.409 1.3645 2.9866 3.6431 4.4799 6.8357 4.4799 3.1668 0.00001 5.4324-1.4933 6.797-4.4799 1.3645-2.9866 2.0468-8.123 2.0468-15.409m14.869 0.11586c-0.00005 9.5519-2.0598 16.928-6.1791 22.129-4.1195 5.175-9.9639 7.7625-17.533 7.7625-7.5952 0-13.453-2.5875-17.572-7.7625-4.1194-5.2008-6.1791-12.577-6.1791-22.129 0-9.5776 2.0597-16.954 6.1791-22.129 4.1194-5.2007 9.9767-7.8011 17.572-7.8012 7.5694 0.00006 13.414 2.6004 17.533 7.8012 4.1194 5.1751 6.1791 12.551 6.1791 22.129"/>
+    <path id="path3767" style="" d="m168.7 284.25h24.253v11.238h-24.253v-11.238"/>
+    <path id="path3769" style="" d="m234.16 281.54c3.8877 1.0041 6.8356 2.7549 8.8439 5.2523 2.0339 2.4717 3.0509 5.6256 3.051 9.4618-0.00005 5.7157-2.1885 10.067-6.5653 13.053-4.3769 2.9608-10.762 4.4413-19.155 4.4413-2.9609 0-5.9346-0.24459-8.9211-0.73377-2.9608-0.46344-5.8959-1.1715-8.8053-2.1241v-11.47c2.7806 1.3903 5.5355 2.4459 8.2646 3.1668 2.7548 0.69517 5.4582 1.0427 8.1101 1.0427 3.9392 0.00001 6.9515-0.68227 9.037-2.0468 2.1112-1.3645 3.1668-3.3213 3.1668-5.8702-0.00004-2.6261-1.0814-4.6086-3.244-5.9474-2.137-1.3645-5.3038-2.0468-9.5004-2.0468h-5.9474v-9.5777h6.2564c3.7332 0.00004 6.5138-0.57925 8.3418-1.7379 1.828-1.1843 2.742-2.9737 2.742-5.3681-0.00003-2.2142-0.88828-3.9263-2.6648-5.1364-1.7765-1.21-4.2868-1.8151-7.5308-1.8151-2.3944 0.00005-4.8146 0.27038-7.2605 0.81101-2.4459 0.54072-4.879 1.3389-7.2991 2.3944v-10.891c2.9351-0.82383 5.8444-1.4417 8.728-1.8537 2.8836-0.41189 5.7157-0.61786 8.4963-0.61792 7.4922 0.00006 13.092 1.2359 16.8 3.7075 3.7332 2.446 5.5998 6.1406 5.5998 11.084-0.00005 3.3728-0.8883 6.1406-2.6648 8.3032-1.7765 2.137-4.4027 3.6431-7.8784 4.5185"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>not suitable for children with age 0-3</dc:title>
+        <dc:date>2009-10-05T03:22:45</dc:date>
+        <dc:description>the symbol seen mostly on the package of toys. Not suitable for children with age 0-3</dc:description>
+        <dc:source>http://openclipart.org/detail/27682/not-suitable-for-children-with-age-0-3-by-0x52</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>0x52</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>child</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>externalsource</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>label</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>symbol</rdf:li>
+            <rdf:li>toy</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
