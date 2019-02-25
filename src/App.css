@@ -31,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+
+.messages {
+  width: 300px;
+  height: 200px;
+}

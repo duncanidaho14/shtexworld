@@ -2,12 +2,41 @@ import React, { Component } from 'react';
 import Welcome from './components/Welcome';
 import TodoList from './Todo/TodoList';
 import NavbarSide from './NavbarSide/NavbarSide';
-import Calendar from './Calendar/Calendar';
+import Formulaire from './Tchat/Formulaire';
+import Message from './Tchat/Message';
 import logo from './logo.svg';
 import './App.css';
 
+import base from './Firebase/Firebase';
+
 class App extends Component {
+  state = {
+    messages: {},
+    pseudo: this.props.match.params.pseudo
+  }
+  
+  componentDidMount() {
+    base.syncState('/', {
+      context: this,
+      state: 'messages'
+    })
+  }
+
+  addMessage = message => {
+    const messages = {...this.state.messages }
+    messages[`message-${Date.now()}`] = message
+    this.setState({ messages })
+  }
   render() {
+    const messages = Object
+    .keys(this.state.messages)
+    .map(key => (
+        <Message 
+            key={key}
+            message={this.state.messages[key].message}
+            pseudo={this.state.messages[key].pseudo}
+        />
+    ))
     return (
       <div className="App">  
         <nav>
@@ -22,7 +51,19 @@ class App extends Component {
           <TodoList />
         </div>
 
-        <Calendar />
+        <div>
+          <div className='messages'>
+              { messages }
+          </div>
+          <div>
+            <Formulaire
+                length={140}
+                pseudo={this.state.pseudo}
+                addMessage={this.addMessage}
+            />
+          </div>
+        </div>
+
       </div>
     );
   }
