@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './TodoList.scss';
+import marked from 'marked';
+import { sampleText } from './../sampleText';
 
 class TodoList extends Component {
+    
     constructor() {
         super();
         this.state = {
+            text: sampleText,
             userInput: '',
             items: []
         };
     }
-
+    
     onChange(event) {
         this.setState({
             userInput: event.target.value
@@ -45,10 +49,30 @@ class TodoList extends Component {
             );
         });
     }
+    renderText = userInput => {
+        const __html = marked(userInput, { sanitize: true })
+        return { __html }
+    }
+    componentDiMount () {
+        const userInput = localStorage.getItem('userInput')
+        
+        if (userInput) {
+            this.setState({ userInput })
+        } else {
+            this.setState({ userInput: userInput })
+        }
+    }
+
+    componentDidUpdate () {
+        const { userInput } = this.state
+        localStorage.setItem('userInput', userInput)
+    }
 
     render() {
         return(
-            <div className="container">
+            <Fragment>
+            <div className="container" 
+            />
                 <h1 align="center">Ma Todo list</h1>
                 <form className="form-row align-items-center">
                     <input 
@@ -57,7 +81,9 @@ class TodoList extends Component {
                         placeholder="Renseigner un item"
                         onChange={this.onChange.bind(this)}
                         className="form-control mb-2"
+                        
                     />
+                    
                     <button 
                         onClick={this.addTodo.bind(this)} 
                         className="btn btn-primary"
@@ -69,7 +95,11 @@ class TodoList extends Component {
                 <div className="list-group">
                     {this.renderTodos()}
                 </div>
-            </div>
+                <div dangerouslySetInnerHTML={{ __html: this.renderText(this.state.userInput) }}
+                    />
+ 
+            
+            </Fragment>
         );
     }
 }

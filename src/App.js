@@ -1,29 +1,28 @@
 import React, { Component } from 'react';
 import Welcome from './components/Welcome';
 import TodoList from './Todo/TodoList';
+import NavbarSide from './NavbarSide/NavbarSide';
+import Calendar from './Calendar/Calendar';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="App">  
+        <nav>
+          <NavbarSide />
+        </nav>
+        <header className="App-header">       
           <img src={logo} className="App-logo" alt="logo" />
-           <h1>Bienvenue</h1>
-           <p><Welcome name="shtex"/></p> 
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          </a>
+          <h1><Welcome name="shtex"/></h1>   
         </header>
       
         <div className="">
           <TodoList />
         </div>
+
+        <Calendar />
       </div>
     );
   }
