@@ -9,15 +9,10 @@ import Formulaire from './Tchat/Formulaire';
 import Message from './Tchat/Message';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+//import { Carousel } from 'react-responsive-carousel';
 import './App.scss';
+import ControlledCarousel from './Carousel/Carousel';
 
-import logosamourai from './Logo/samourai.gif';
-import logostreet2 from './Logo/streetfighter2.gif';
-import logosonic from './Logo/sonic.gif';
-import logoobelix from './Logo/obelixfrapperomain.gif';
-import logomariokart from './Logo/mariokart.gif';
-import logoglobeallemagne from './Logo/globeallemagne.gif'
 
 
 class App extends Component {
@@ -55,34 +50,8 @@ class App extends Component {
           <NavbarSide />
         </nav>
         <header className="App-header">
-        <Carousel>
-          <div className="carousel">
-            <img src={logosonic} alt="" />
-            <p className="legend">Legend 1</p>
-          </div>
-          <div>
-            <img src={logostreet2} alt="" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src={logosamourai} alt="" />
-            <p className="legend">Legend 3</p>
-          </div>
-          <div>
-            <img src={logoobelix} alt="" />
-            <p className="legend">Legend 3</p>
-          </div>
-          <div>
-            <img src={logomariokart} alt="" />
-            <p className="legend">Legend 3</p>
-          </div>
-          <div>
-            <img src={logoglobeallemagne} alt="" />
-            <p className="legend">Legend 3</p>
-          </div>
-        </Carousel>       
-          
-          <h1><Welcome name="shtex"/></h1>   
+            <ControlledCarousel />
+          <h1><Welcome name={this.state.pseudo}/></h1>   
         </header>
       
         <div className="todolist">
