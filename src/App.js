@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import 'util'
 import Welcome from './components/Welcome';
 import TodoList from './Todo/TodoList';
 import NavbarSide from './NavbarSide/NavbarSide';
 import Formulaire from './Tchat/Formulaire';
 import Message from './Tchat/Message';
-import logo from './logo.svg';
+import logosamourai from './Logo/samourai.gif';
+import logostreet2 from './Logo/streetfighter2.gif';
+import logosonic from './Logo/sonic.gif';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 import './App.scss';
-
 import base from './Firebase/Firebase';
-
 class App extends Component {
   state = {
     messages: {},
@@ -42,8 +46,22 @@ class App extends Component {
         <nav>
           <NavbarSide />
         </nav>
-        <header className="App-header">       
-          <img src={logo} className="App-logo" alt="logo" />
+        <header className="App-header">
+        <Carousel>
+        <div className="carousel">
+                    <img src={logosonic} alt="" />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src={logostreet2} alt="" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src={logosamourai} alt="" />
+                    <p className="legend">Legend 3</p>
+                </div>
+        </Carousel>       
+          
           <h1><Welcome name="shtex"/></h1>   
         </header>
       
