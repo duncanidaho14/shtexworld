@@ -2,9 +2,12 @@ import React from 'react';
 
 const Message = ({ pseudo, message }) => {
     return (
-        <p className='user-message'>
-            {message}
-        </p>
+        <aside className='user-message'>
+           <ul className='list-group'>
+               <li className="list-group-item active">{ pseudo } : </li>
+               <li className="list-group-item active">{ message }</li>
+           </ul>   
+        </aside>
     )
 }
 

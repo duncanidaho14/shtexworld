@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.scss';
 import Connexion from './Connexion/Connexion';
 import NotFound from './Connexion/NotFound';
+import Games from './Games/Games';
 import App from './App';
 
 class Root extends Component {
@@ -15,6 +16,7 @@ class Root extends Component {
                 <Switch>
                     <Route exact path='/' component={Connexion} />
                     <Route path='/pseudo/:pseudo' component={App} />
+                    <Route path='/games/:pseudo' component={Games} />
                     <Route component={NotFound} />
                 </Switch>
             </BrowserRouter>

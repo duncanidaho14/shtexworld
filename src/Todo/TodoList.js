@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import './TodoList.scss';
 import marked from 'marked';
 import { sampleText } from './../sampleText';
 
@@ -43,7 +42,7 @@ class TodoList extends Component {
     renderTodos() {
         return this.state.items.map((item) => {
             return (
-                <div className="list-group-item" key={item}>
+                <div className="alert alert-primary" role="alert" key={item}>
                     {item} | <button onClick={this.deleteTodo.bind(this, item)}>X</button>
                 </div>    
             );
@@ -71,34 +70,30 @@ class TodoList extends Component {
     render() {
         return(
             <Fragment>
-            <div className="container" 
-            />
-                <h1 align="center">Ma Todo list</h1>
-                <form className="form-row align-items-center">
-                    <input 
-                        value={this.state.userInput} 
-                        type="text" 
-                        placeholder="Renseigner un item"
-                        onChange={this.onChange.bind(this)}
-                        className="form-control mb-2"
+                <div className="container" />
+                    <h1 align="center">Ma Todo list</h1>
+                    <form className="form-row align-items-center">
+                        <input 
+                            value={this.state.userInput} 
+                            type="text" 
+                            placeholder="Renseigner un item"
+                            onChange={this.onChange.bind(this)}
+                            className="form-control mb-2"
+                            
+                        />
                         
-                    />
-                    
-                    <button 
-                        onClick={this.addTodo.bind(this)} 
-                        className="btn btn-primary"
-                        align="center"
-                    >
-                        Ajouter
-                    </button>
-                </form>
-                <div className="list-group">
-                    {this.renderTodos()}
-                </div>
-                <div dangerouslySetInnerHTML={{ __html: this.renderText(this.state.userInput) }}
-                    />
- 
-            
+                        <button 
+                            onClick={this.addTodo.bind(this)} 
+                            className="btn btn-primary"
+                            align="center"
+                        >
+                            Ajouter
+                        </button>
+                    </form>
+                    <div className="list-group">
+                        {this.renderTodos()}
+                    </div>
+                <div dangerouslySetInnerHTML={{ __html: this.renderText(this.state.userInput) }}/>
             </Fragment>
         );
     }

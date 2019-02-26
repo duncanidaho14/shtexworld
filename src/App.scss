@@ -34,7 +34,7 @@
   position: relative;
   display: block;
   width: 100%;
-  height: 100rem;
+  height: 100%;
 }
 
 .messages {
@@ -63,6 +63,7 @@ background-color: #eceff1;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	font-size: 3rem;
 }
 
 .message > * {
@@ -72,6 +73,7 @@ background-color: #eceff1;
 	margin: 10px 0;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
+	font-size: 3rem;
 }
 
 .not-user-message {
@@ -93,9 +95,10 @@ background-color: #eceff1;
 
 .user-message {
 	background-color: #2196F3;
-	color: #fff;
+	color: rgb(66, 15, 15);
 	align-self: flex-end;
 	position: relative;
+	font-size: 2rem;
 }
 
 .user-message:after {
@@ -123,7 +126,9 @@ background-color: #eceff1;
 
 textarea {
 	box-sizing: border-box;
-	height: 120px;
+	position: relative;
+	width: 100%;
+	height: 320px;
 	border: 5px solid #2196F3;
 	border-width: 0 0 5px 0;
 	background-color: #ECEFF1;
@@ -165,4 +170,18 @@ button:disabled {
 	min-height: 100vh;
 	margin: 0;
 	background: #eceff1;
+}
+
+/* ----------------------------
+	TodoList
+---------------------------- */
+
+.TodoList {
+    position: relative;
+    height: 550px;
+}
+
+button {
+    width: 90px;
+    height: 50px;
 }
